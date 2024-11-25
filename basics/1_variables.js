@@ -1,3 +1,4 @@
+//"use strict". // -> treates code as a newer verision of js
 const accountId=98764
 let accountEmail="srishanthreddy@gmail.com"
 var accountPassword="12345"
@@ -53,6 +54,23 @@ example:[function test() {
   console.log(x); // 10 (var is function-scoped)
 }
 test();]
+*/
+
+
+/*
+What Happens If You Don’t Declare a Variable in JavaScript?
+If you assign a value to a variable without using var, let, or const, the variable is automatically created as a global variable. This behavior depends on the strict mode of your JavaScript code:
+
+Without Strict Mode:
+If you do not explicitly declare a variable, JavaScript implicitly declares it as a global variable.
+x = 10; // Implicit global variable
+console.log(x); // 10
+
+
+With Strict Mode ("use strict";):
+Strict mode enforces safer coding practices, and undeclared variables result in a ReferenceError.
+"use strict";
+y = 20; // Error: y is not defined
 */
 
 
